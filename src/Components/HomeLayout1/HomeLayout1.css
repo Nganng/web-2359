@@ -1,0 +1,44 @@
+.home-layout1-container {
+  height: 500px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+.column {
+  width: 50%;
+  height: 500px;
+  display: block;
+}
+.left {
+  padding-top: 60px;
+}
+.slogan {
+  color: #252525;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  padding-left: 150px;
+  padding-top: 0px;
+  line-height: 10%;
+}
+.introduce {
+  color: #252525;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  padding-left: 150px;
+  padding-right: 100px;
+  padding-top: 20px;
+  font-weight: normal;
+}
+.about-company-text {
+  color: #252525;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  padding-left: 150px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 4;
+}
+.image-introduce {
+  padding-top: 190px;
+  padding-left: 20px;
+}

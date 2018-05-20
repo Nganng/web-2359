@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: row;
+}
+.company-logo {
+  padding-left: 60px;
+  cursor: pointer;
+  padding-top: 40px;
+}
+.items {
+  margin-left: auto;
+  display: flex;
+  padding-top: 50px;
+}
+.item {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  padding-right: 60px;
+  color: black;
+  text-decoration: none;
+}
