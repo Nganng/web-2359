@@ -1,0 +1,29 @@
+.home-contact-container {
+  height: 500px;
+  background-color: #37424e;
+}
+.home-contact-wrapper {
+  height: 100%;
+  width: 1000px;
+  background-color: #37424e;
+  margin: auto;
+}
+.home-contact-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 120px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+.change-color {
+  color: #5f7284;
+}
+.contact-us-text {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+}

@@ -1,3 +1,5 @@
+import "normalize.css"
+import "flexboxgrid"
 import React from "react"
 import ReactDOM from "react-dom"
 import Home from "./Pages/Home"
@@ -21,4 +23,5 @@ ReactDOM.render(
   </Router>,
   document.getElementById("root")
 )
+
 registerServiceWorker()

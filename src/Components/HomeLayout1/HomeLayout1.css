@@ -1,30 +1,17 @@
-.home-layout1-container {
-  height: 500px;
-  width: 100%;
-  background-color: white;
-  display: flex;
+.home-banner {
+  padding: 80px 0;
 }
-.column {
-  width: 50%;
-  height: 500px;
-  display: block;
-}
-.left {
-  padding-top: 60px;
-}
+
 .slogan {
   color: #252525;
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
-  padding-left: 150px;
-  padding-top: 0px;
   line-height: 10%;
 }
 .introduce {
   color: #252525;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  padding-left: 150px;
   padding-right: 100px;
   padding-top: 20px;
   font-weight: normal;
@@ -33,12 +20,14 @@
   color: #252525;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  padding-left: 150px;
-  font-weight: bold;
   text-decoration: none;
   line-height: 4;
 }
 .image-introduce {
-  padding-top: 190px;
-  padding-left: 20px;
+  width: 400px;
+}
+
+.header-logo {
+  align-self: flex-end;
+  text-align: right;
 }

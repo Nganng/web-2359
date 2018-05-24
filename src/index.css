@@ -3,3 +3,27 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* grid */
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+}
+
+.column-1 {
+  flex: 1;
+}
+
+.column-2 {
+  flex: 2;
+}

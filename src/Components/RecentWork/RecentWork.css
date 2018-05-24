@@ -1,0 +1,58 @@
+.wrapper-recent {
+  width: 1000px;
+}
+.title-recent-text {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-top: 50px;
+}
+.explore-more-work {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: black;
+  text-align: right;
+  display: block;
+}
+.wrapper-work-image {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+.work-images {
+  width: 480px;
+  margin-top: 70px;
+  position: relative;
+  overflow: hidden;
+}
+.work-image {
+  width: 100%;
+  height: 100%;
+}
+.banner {
+  opacity: 0.5;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  bottom: 20px;
+  background-color: #424958;
+}
+.banner-content {
+  text-align: center;
+  justify-content: center;
+  color: white;
+  padding-top: 80px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+.work-images:hover .work-image {
+  transform: scale(1.2);
+}
+.work-images:hover .banner {
+  display: block;
+  margin: auto;
+}

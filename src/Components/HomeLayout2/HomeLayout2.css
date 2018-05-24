@@ -4,8 +4,9 @@
 }
 .layout2-block {
   height: 50%;
-  width: 100%;
+  width: 1000px;
   display: flex;
+  margin: auto;
 }
 .col-2-3 {
   width: 60%;
@@ -20,7 +21,6 @@
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
-  padding-left: 150px;
   padding-top: 120px;
   margin: 0;
 }
@@ -28,7 +28,6 @@
   color: #5f7284;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
-  padding-left: 150px;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -36,12 +35,10 @@
   color: white;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  padding-left: 150px;
   font-weight: normal;
   text-decoration: none;
 }
 .image-oval {
   padding-top: 130px;
-  padding-right: 140px;
-  float: right;
+  padding-left: 150px;
 }

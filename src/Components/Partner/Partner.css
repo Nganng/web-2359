@@ -1,0 +1,30 @@
+.wrapper-partner {
+  width: 1000px;
+  height: 700px;
+}
+.wrapper-title-partner {
+  height: 200px;
+}
+.title-partner-text {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-top: 100px;
+}
+.wrapper-logos {
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.partner-logo-wrapper {
+  width: 25%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partner-logo {
+  width: 40%;
+  vertical-align: middle;
+}
