@@ -13,7 +13,7 @@ deploy:
   bucket: 2359media-website
   region: ap-southeast-1
   local-dir: build
-  acl: ''
+  acl: public_read
   skip-cleanup: true
   on:
     repo: 2359media/2359media-website
