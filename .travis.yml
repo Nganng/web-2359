@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+- '9.10.1'
+yarn: true
+script:
+- yarn run build
+
+deploy:
+  provider: s3
+  access_key_id: AKIAJTKIVFNQCBHO62MQ
+  secret_access_key:
+    secure: TCfZFbYnYO5T9pHOPwQcPU3oDAuTCFMMgR9QJskYJMXB1O2gs8bATWhLhdlLdsuaFF480TytDljGC5AzRtIHh+sTUUtbYiPuJ3F4ORDoI/mdnQHs7/1R4SYttYoe+4zFURLlcqhKDlw7Rhznd042yRTdsCAiQ6pqabz3V7C41awHCj35PtcwrXFbw7xs5/0tBBY9GdU/TW1Kc6SSUYfkcBSBUGviaypEAgRC8w48NV3tGa3nXaiFR7l5gAQND3ss4CZ/vYai5eMvb7klSuOdIfWFTc5H1NkNqm91GwvvZ15h30NwewM71x8TMwI1ZFTvCmwI/74FzjVe5hesesHzHJoMvM5IRPaYF/+LWu3ymUpwaz0cbGHhLkrJbYHKW9E8gzuRZhRMUBYHxK5O00P9yjz+Thr03AU9nzxiHf5FyAcfXjbuTleX8HSuiHOrbY2Yc7nEM+CJVTTLIYKFrwqd+IzV2qNg6qBtEywYYPDut539Ftjxur2/Ib4+koeq26SAkkTei20DXuQ5kcSLxue5Bk9eXewhOxKJepggEduCJMrGuSgOjMLGlUhqQt2fCB14zdGq5Sc3smhIJzPwD/btQhvgLaBCvUpspssDkGy6+B1abH4ZsvTl2/0M1jRUZtyZ66KK/7IOW/x76PNmMsyAcEP1AeT87c3GpwiYHvwF+Kc=
+  bucket: 2359media-website
+  region: ap-southeast-1
+  local-dir: build
+  acl: ''
+  skip-cleanup: true
+  on:
+    repo: 2359media/2359media-website
+    branch: master
