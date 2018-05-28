@@ -1,5 +1,8 @@
 .wrapper-recent {
-  width: 1000px;
+  padding-top: 40px;
+}
+.wrapper-title-recent {
+  padding-bottom: 10px;
 }
 .title-recent-text {
   font-size: 40px;
@@ -22,17 +25,17 @@
 }
 .work-images {
   width: 480px;
-  margin-top: 70px;
+  margin-top: 50px;
   position: relative;
   overflow: hidden;
 }
 .work-image {
   width: 100%;
   height: 100%;
+  transition: all 0.2s;
 }
 .banner {
-  opacity: 0.5;
-  display: none;
+  opacity: 0;
   cursor: pointer;
   position: absolute;
   top: 20px;
@@ -53,6 +56,15 @@
   transform: scale(1.2);
 }
 .work-images:hover .banner {
-  display: block;
+  opacity: 0.5;
   margin: auto;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .work-images {
+    width: 280px;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+  }
 }

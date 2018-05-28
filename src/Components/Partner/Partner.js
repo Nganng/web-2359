@@ -11,7 +11,7 @@ import "./Partner.css"
 class Partner extends Component {
   render() {
     return (
-      <div className="container wrapper-partner">
+      <div className="container">
         <div className="wrapper-title-partner">
           <p className="title-partner-text">Who we work with </p>
         </div>

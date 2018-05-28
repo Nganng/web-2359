@@ -1,19 +1,18 @@
 .home-banner {
-  padding: 80px 0;
+  padding: 80px 0 100px 0;
 }
 
 .slogan {
   color: #252525;
   font-family: "Montserrat", sans-serif;
-  font-size: 60px;
-  line-height: 10%;
+  font-size: 70px;
+  font-weight: 900;
 }
 .introduce {
   color: #252525;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  padding-right: 100px;
-  padding-top: 20px;
+  /* padding-right: 100px; */
   font-weight: normal;
 }
 .about-company-text {
@@ -21,7 +20,10 @@
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   text-decoration: none;
-  line-height: 4;
+  line-height: 5;
+}
+.about-company-text:hover {
+  font-weight: bold;
 }
 .image-introduce {
   width: 400px;
@@ -30,4 +32,36 @@
 .header-logo {
   align-self: flex-end;
   text-align: right;
+}
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .slogan {
+    color: #252525;
+    font-family: "Montserrat", sans-serif;
+    font-size: 55px;
+  }
+  .introduce {
+    color: #252525;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .image-introduce {
+    width: 350px;
+  }
+  .header-logo {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .slogan {
+    color: #252525;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+  }
+  .image-introduce {
+    width: 180px;
+  }
+  .header-logo {
+    text-align: center;
+  }
 }

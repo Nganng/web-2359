@@ -3,11 +3,39 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-
 .container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+.text-montserrat {
+  color: #252525;
+  font-family: "Montserrat", sans-serif;
+}
+
+.text-raleway {
+  color: #252525;
+  font-family: "Raleway", sans-serif;
+}
+.about-company-text {
+  color: #252525;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 5;
+}
+.about-company-text:hover {
+  font-weight: bold;
+}
+.about-company-text-2 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 5;
+}
+.about-company-text-2:hover {
+  font-weight: bold;
 }
 
 /* grid */
@@ -16,14 +44,24 @@ body {
   display: flex;
 }
 
-.column {
-  flex: 1;
-}
-
 .column-1 {
   flex: 1;
 }
 
 .column-2 {
   flex: 2;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .container {
+    max-width: 600px;
+  }
+  .column-1 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    max-width: 300px;
+  }
 }

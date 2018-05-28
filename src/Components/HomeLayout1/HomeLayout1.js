@@ -1,16 +1,18 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
 import device from "../../Images/device.png"
+import "../../index.css"
 import "./HomeLayout1.css"
 class HomeLayout1 extends Component {
   render() {
     return (
-      <div className="container home-banner">
+      <div className="home-banner container">
         <div className="row">
           <div className="column-1">
-            <p className="slogan"> Transforming </p>
-            <p className="slogan"> Tomorrow </p>
-            <p className="slogan"> Together </p>
+            <p className="slogan">
+              {" "}
+              Transforming <br /> Tomorrow <br /> Together{" "}
+            </p>
             <p className="introduce">
               {" "}
               Award-winning digital engineering agency focusing on

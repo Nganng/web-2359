@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import Company_Logo from "../../Images/Company_Logo.png"
+import menu from "../../Images/menu.png"
 import "./Header.css"
 class Header extends Component {
   render() {
@@ -10,26 +12,29 @@ class Header extends Component {
           <img className="logo-main" src={Company_Logo} alt="logo" />
         </div>
         <div className="items">
-          <Link className="item" to="/">
-            {" "}
+          <div className="item-menu">
+            <img className="logo-main" src={menu} alt="logo" />
+          </div>
+          <NavLink
+            exact={true}
+            className="item"
+            activeClassName="is-active"
+            to="/"
+          >
             Home
-          </Link>
-          <Link className="item" to="/about">
-            {" "}
+          </NavLink>
+          <NavLink className="item" activeClassName="is-active" to="/about">
             About
-          </Link>
-          <Link className="item" to="/process">
-            {" "}
+          </NavLink>
+          <NavLink className="item" activeClassName="is-active" to="/process">
             Process
-          </Link>
-          <Link className="item" to="/work">
-            {" "}
+          </NavLink>
+          <NavLink className="item" activeClassName="is-active" to="/work">
             Works
-          </Link>
-          <Link className="item" to="/contact">
-            {" "}
+          </NavLink>
+          <NavLink className="item" activeClassName="is-active" to="/contact">
             Contact
-          </Link>
+          </NavLink>
         </div>
       </div>
     )
