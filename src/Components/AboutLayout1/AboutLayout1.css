@@ -1,0 +1,52 @@
+.about-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 0 100px 0;
+}
+.about-text-1 {
+  color: #252525;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+}
+.gradient-text {
+  background: linear-gradient(to right, #30b6cf 0%, #ffc300 50%, #e1566e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-text-2 {
+  color: #646464;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  padding-bottom: 180px;
+}
+.about-text-3 {
+  color: #252525;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+.about-number-wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 100px;
+}
+.about-number {
+  color: #252525;
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 0.5;
+}
+.about-number-text {
+  color: #252525;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+.padding {
+  padding-top: 180px;
+}

@@ -1,11 +1,13 @@
-import React, { Component } from "react"
+import React, { Component, Fragment } from "react"
 import Header from "../Components/Header/Header"
+import AboutLayout1 from "../Components/AboutLayout1/AboutLayout1"
 class About extends Component {
   render() {
     return (
-      <div className="container">
+      <Fragment>
         <Header />
-      </div>
+        <AboutLayout1 />
+      </Fragment>
     )
   }
 }
