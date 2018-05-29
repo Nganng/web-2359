@@ -10,7 +10,10 @@ class HomeLayout2 extends Component {
       <div className="home-layout2-container">
         <div className="container">
           <div className="layout2-block">
-            <div className="col-2-3">
+            <div className="col-lg-8">
+              <div className="image-wrapper-1">
+                <img className="image-oval-1" src={oval} alt="image-oval" />
+              </div>
               <p className="intro-1">
                 {" "}
                 Where Design, Technology and Strategy collide.{" "}
@@ -21,12 +24,15 @@ class HomeLayout2 extends Component {
                 About our company
               </Link>
             </div>
-            <div className="col-1-3 image-wrapper">
+            <div className="col-lg-4 image-wrapper">
               <img className="image-oval" src={oval} alt="image-oval" />
             </div>
           </div>
           <div className="layout2-block">
-            <div className="col-2-3">
+            <div className="col-lg-8">
+              <div className="image-wrapper-1">
+                <img className="image-oval-1" src={triangle} alt="image-oval" />
+              </div>
               <p className="intro-1"> Calculated and iterative. </p>
               <p className="intro-2">
                 {" "}
@@ -38,7 +44,7 @@ class HomeLayout2 extends Component {
                 Learn more about our process
               </Link>
             </div>
-            <div className="col-1-3 image-wrapper">
+            <div className="col-lg-4 image-wrapper">
               <img className="image-oval" src={triangle} alt="image-oval" />
             </div>
           </div>

@@ -1,5 +1,5 @@
 .home-contact-container {
-  padding-bottom: 100px;
+  padding-bottom: 120px;
   background-color: #37424e;
 }
 .home-contact-wrapper {
@@ -12,7 +12,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 70px;
-  padding-top: 120px;
+  padding-top: 150px;
   padding-bottom: 30px;
   margin: 0;
 }
@@ -26,23 +26,26 @@
   font-weight: normal;
   text-decoration: none;
 }
+.contact-us-text:hover {
+  font-weight: bold;
+}
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
   .home-contact-wrapper {
     max-width: 600px;
-    background-color: #37424e;
-    margin: auto;
   }
   .home-contact-text {
     font-size: 48px;
   }
 }
 @media screen and (max-width: 700px) {
+  .home-contact-container {
+    padding-bottom: 100px;
+  }
   .home-contact-wrapper {
     max-width: 300px;
-    background-color: #37424e;
-    margin: auto;
   }
   .home-contact-text {
     font-size: 30px;
+    padding-top: 100px;
   }
 }

@@ -5,7 +5,7 @@
   padding-bottom: 10px;
 }
 .title-recent-text {
-  font-size: 40px;
+  font-size: 54px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   padding-top: 50px;
@@ -17,6 +17,9 @@
   color: black;
   text-align: right;
   display: block;
+}
+.explore-more-work:hover {
+  font-weight: bold;
 }
 .wrapper-work-image {
   display: flex;
@@ -35,29 +38,42 @@
   transition: all 0.2s;
 }
 .banner {
-  opacity: 0;
-  cursor: pointer;
   position: absolute;
   top: 20px;
   right: 20px;
   left: 20px;
   bottom: 20px;
+}
+.banner::before {
+  opacity: 0;
   background-color: #424958;
+  cursor: pointer;
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 .banner-content {
   text-align: center;
-  justify-content: center;
+  padding-top: 60px;
+  position: relative;
   color: white;
-  padding-top: 80px;
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
+  opacity: 0;
 }
 .work-images:hover .work-image {
   transform: scale(1.2);
 }
-.work-images:hover .banner {
+.work-images:hover .banner::before {
   opacity: 0.5;
   margin: auto;
+}
+.work-images:hover .banner-content {
+  opacity: 1;
+  z-index: 200;
 }
 
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
@@ -66,5 +82,23 @@
     margin-top: 40px;
     position: relative;
     overflow: hidden;
+  }
+  .title-recent-text {
+    font-size: 40px;
+  }
+  .banner-content {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .title-recent-text {
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  .explore-more-work {
+    font-size: 10px;
+  }
+  .banner-content {
+    font-size: 20px;
   }
 }

@@ -28,12 +28,21 @@
 .image-introduce {
   width: 400px;
 }
+.image-introduce-1 {
+  display: none;
+}
+.col-1 {
+  width: 50%;
+}
 
 .header-logo {
   align-self: flex-end;
   text-align: right;
 }
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .home-banner {
+    padding: 60px 0 80px 0;
+  }
   .slogan {
     color: #252525;
     font-family: "Montserrat", sans-serif;
@@ -46,22 +55,44 @@
     font-weight: normal;
   }
   .image-introduce {
+    display: none;
+  }
+  .image-introduce-1 {
     width: 350px;
+    display: inline-block;
+  }
+  .header-logo-1 {
+    text-align: center;
+    padding-bottom: 30px;
   }
   .header-logo {
-    text-align: center;
+    display: none;
   }
 }
 @media screen and (max-width: 700px) {
+  .home-banner {
+    padding: 10px 0 60px 0;
+  }
   .slogan {
     color: #252525;
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
   }
   .image-introduce {
-    width: 180px;
+    display: none;
   }
   .header-logo {
+    display: none;
+  }
+  .image-introduce-1 {
+    width: 180px;
+    display: inline-block;
+  }
+  .header-logo-1 {
     text-align: center;
+    padding-bottom: 20px;
+  }
+  .about-company-text {
+    line-height: 3;
   }
 }

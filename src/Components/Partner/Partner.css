@@ -1,16 +1,15 @@
 .wrapper-title-partner {
 }
 .title-partner-text {
-  font-size: 40px;
+  font-size: 54px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  padding-top: 100px;
+  padding-top: 60px;
 }
 .wrapper-logos {
   height: 350px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 30px;
   padding-bottom: 50px;
 }
 .partner-logo-wrapper {
@@ -25,6 +24,9 @@
   vertical-align: middle;
 }
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
+  .title-partner-text {
+    font-size: 40px;
+  }
 }
 @media only screen and (max-width: 700px) {
   .partner-logo-wrapper {
@@ -33,5 +35,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .title-partner-text {
+    font-size: 20px;
   }
 }

@@ -20,6 +20,19 @@
   color: black;
   text-decoration: none;
 }
+.menu-text {
+  color: black;
+  padding: 20px 16px;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+  text-align: right;
+}
+.menu-text:hover {
+  opacity: 0.5;
+  font-size: 35px;
+}
 .item:last-child {
   padding-right: 0px;
 }
@@ -32,12 +45,85 @@
 .is-active {
   font-weight: bold;
 }
+.menu-wrapper {
+  position: relative;
+  z-index: 200;
+  opacity: 0;
+}
+.menu-content {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 700px;
+  top: 48px;
+  /* transition: all 1s ease-in-out; */
+}
+.menuAnimation-enter {
+  opacity: 0;
+}
+.menuAnimation-enter-active {
+  opacity: 1;
+  transition: all 800ms ease-out;
+}
+.menuAnimation-exit {
+  opacity: 1;
+}
+.menuAnimation-exit-active {
+  opacity: 0;
+  transition: all 1s ease-out;
+}
+
+/* .menu-content .menu-text {
+  animation: showing 1s;
+}
+
+.menu-content .menu-text:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.menu-content .menu-text:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.menu-content .menu-text:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.menu-content .menu-text:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.menu-content .menu-text:nth-child(5) {
+  animation-delay: 0.7s;
+}
+
+@keyframes showing {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0.3;
+  }
+  65% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
 @media only screen and (min-width: 700px) and (max-width: 1200px) {
   .header {
     display: flex;
     flex-direction: row;
     max-width: 700px;
     margin: auto;
+  }
+  .menu-wrapper {
+    opacity: 1;
+  }
+  .menu-text:last-child {
+    padding-bottom: 350px;
   }
   .items {
     margin-left: auto;
@@ -46,6 +132,7 @@
   }
   .logo-main {
     width: 70%;
+    cursor: pointer;
   }
   .item {
     display: none;
@@ -72,6 +159,7 @@
   }
   .logo-main {
     width: 50%;
+    cursor: pointer;
   }
   .icon-menu {
     width: 60%;
@@ -80,5 +168,17 @@
     margin-left: auto;
     display: flex;
     padding-top: 40px;
+  }
+  .menu-wrapper {
+    opacity: 1;
+  }
+  .menu-text {
+    font-size: 24px;
+  }
+  .menu-text:hover {
+    font-size: 28px;
+  }
+  .menu-text:last-child {
+    padding-bottom: 150px;
   }
 }

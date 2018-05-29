@@ -8,11 +8,18 @@ class HomeLayout1 extends Component {
     return (
       <div className="home-banner container">
         <div className="row">
-          <div className="column-1">
+          <div className="col-xs">
             <p className="slogan">
               {" "}
               Transforming <br /> Tomorrow <br /> Together{" "}
             </p>
+            <div className="header-logo-1">
+              <img
+                className="image-introduce-1"
+                src={device}
+                alt="device-image"
+              />
+            </div>
             <p className="introduce">
               {" "}
               Award-winning digital engineering agency focusing on
@@ -23,7 +30,7 @@ class HomeLayout1 extends Component {
               About our company
             </Link>
           </div>
-          <div className="column-1 header-logo">
+          <div className="col-xs header-logo">
             <img className="image-introduce" src={device} alt="device-image" />
           </div>
         </div>
