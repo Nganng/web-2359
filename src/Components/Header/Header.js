@@ -19,7 +19,7 @@ class Header extends Component {
         </div>
         <div className="items">
           <div className="menu-wrapper">
-            {this.state.showedMenu ? (
+            {this.state.menu === "open" ? (
               <img
                 className="logo-main"
                 src={cancel}
