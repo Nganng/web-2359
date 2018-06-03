@@ -21,19 +21,19 @@ class RecentWork extends Component {
         </div>
         <div className="wrapper-work-image">
           <div className="work-images">
-            <img className="work-image" src={ico} alt="image-oval" />
+            <img className="work-image" src={ico} />
             <div className="banner">
               <p className="banner-content"> ICO Crowdsale Smart Contract</p>
             </div>
           </div>
           <div className="work-images">
-            <img className="work-image" src={mylaundrybox} alt="image-oval" />
+            <img className="work-image" src={mylaundrybox} />
           </div>
           <div className="work-images">
-            <img className="work-image" src={sifa} alt="image-oval" />
+            <img className="work-image" src={sifa} />
           </div>
           <div className="work-images">
-            <img className="work-image" src={dbshome} alt="image-oval" />
+            <img className="work-image" src={dbshome} />
           </div>
         </div>
       </div>

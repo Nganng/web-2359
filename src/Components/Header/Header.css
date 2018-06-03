@@ -46,6 +46,7 @@
   font-weight: bold;
 }
 .menu-wrapper {
+  padding-top: 7px;
   position: relative;
   z-index: 200;
   opacity: 0;
